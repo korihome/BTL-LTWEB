@@ -193,7 +193,7 @@ const LIST_CART = JSON.parse(localStorage.getItem(CART_LIST_NAME)) || { list: []
 const LIST_BUY = JSON.parse(localStorage.getItem(LIST_BUY_NAME)) || { cakes: [] }
 
 const CHECK_CART = 'CHECK_CART'
-const isCheckCart = JSON.parse(localStorage.getItem(CHECK_CART)).isCheckCart || false
+const isCheckCart = JSON.parse(localStorage.getItem(CHECK_CART)) || {isCheckCart: false}
 
 function removeDuplicates(arr1, arr2) {
     return arr1.filter(item => {
@@ -209,7 +209,7 @@ function removeDuplicates(arr1, arr2) {
 }
 
 const handleUpdateCart = () => {
-    if (isCheckCart == true) {
+    if (isCheckCart.isCheckCart == true) {
         console.log(LIST_BUY.cakes)
         LIST_CART.list = removeDuplicates(LIST_CART.list, LIST_BUY.cakes)
 
