@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(to right, #bdecff, rgb(255, 183, 195));
+
+    color: #212329;
+    letter-spacing: 1px;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    background-color: #ff6fc8;
+    text-align: center;
+    z-index: 100;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header img {
+    width: 150px;
+    /* height: 100px; */
+}
+
+header ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    transition: color 0.5s;
+}
+
+header ul li a:hover {
+    color: black;
+}
+
+header ul li .active {
+    color: black;
+}
+
+header #mainNav li #count-cart {
+    color: red;
+}
+
+/* LIST */
+#list {
+    width: 70%;
+    margin: 100px auto;
+}
+
+#list .list__title {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+#list .list__cart .list__item {
+    background-color: white;
+    margin: 7px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+#list .list__item input {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+}
+
+#list .list__item img {
+    width: 120px;
+    border-radius: 20px;
+}
+
+.list__item .item__infor {
+    margin-left: 10px;
+    align-items: flex-start;
+}
+
+.list__item .item__infor .item__name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.list__item .item__infor .item__des {
+    width: 90%;
+}
+
+.list__item .item__infor .item__cost span:first-child {
+    font-size: 0.875rem;
+    opacity: 0.8;
+    text-decoration: line-through;
+}
+
+.list__item .item__infor .item__cost span:last-child {
+    font-weight: bold;
+
+}
+
+.list__item #btn-remove {
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.list__item #btn-remove:hover {
+    background-color: rgb(229, 229, 229);
+}
+
+#menu {
+    background-color: #ff8ed4;
+    width: 100%;
+    padding: 20px 50px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu .menu__check input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+#menu .menu__buy #cost {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#menu .menu__buy a {
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff0e83;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menu .menu__buy a:hover {
+    background-color: #ff3b9a;
+}

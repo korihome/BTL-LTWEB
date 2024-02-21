@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART PAGE</title>
+
+    <!-- AWESOME FONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/CartPage.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__content">
+            <img src="./img/logo1.jpg" alt="cake">
+            <ul id="mainNav">
+                <li><a class="" href="index.html">Trang Chủ</a></li>
+                <li><a class="active" href="CartPage.html">Giỏ hàng (<span id="count-cart">0</span>) </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="list">
+        <div id="list__cart" class="list__cart"></div>
+    </section>
+
+    <section id="menu">
+        <div class="menu__check">
+            <input type="checkbox" name="all" id="all" onchange="handleCheckAll(event)">
+            <span>Chọn tất cả ( <span id="count">0</span> )</span>
+        </div>
+        <div class="menu__buy">
+            <span>Tổng thanh toán ( <span id="count-cr">0</span> sản phẩm ): <span id="cost">0</span>đ</span>
+            <a href="ProPage.html" onclick="handleBuy(event)">MUA NGAY</a>
+        </div>
+    </section>
+
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>
