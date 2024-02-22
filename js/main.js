@@ -234,17 +234,19 @@ const RenderListPro = (list) => {
                 <a href="ProPage.html" onclick="handleShowCake(${index})">
                     <img src="${item.url}" alt="">
                     <div class="item-text">
-                        <h3>${item.name}</h3>
+                        <h3 class="item-name">${item.name}</h3>
                         <p class="item-des">${item.des}</p>
-                        <p><span>${item.dealoff}đ</span> <span>${item.cost}đ</span></p>
-                        <p>${item.size} cm<sup>2</sup></p>
-                        <p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </p>
+                        <div>
+                            <p><span>${item.dealoff}đ</span> <span>${item.cost}đ</span></p>
+                            <p>${item.size} cm<sup>2</sup></p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
                     </div>
                 </a>
                 <button onclick="handleAddtoCart(${index})">Add to cart</button>
