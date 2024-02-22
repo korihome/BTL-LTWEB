@@ -1527,6 +1527,8 @@ footer h4 span {
     footer h4 {
         margin-top: 20px;
         font-size: 0.7rem;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
