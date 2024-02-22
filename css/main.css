@@ -117,15 +117,23 @@ header #btn-toggle {
 
     #mainNav {
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         top: 100%;
         left: 0;
         display: none;
     }
 
+    header ul li .active {
+        color: red;
+    }
+
+    header ul li a:hover {
+        color: red;
+    }
+
     header ul li:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     header ul li a {
@@ -308,7 +316,7 @@ header #btn-toggle {
 
 @media screen and (max-width: 991.98px) {
     .intro__text {
-        padding: 0 20px;
+        padding: 10px 20px;
     }
 
     .intro__item h3 {
@@ -335,18 +343,40 @@ header #btn-toggle {
 }
 
 @media screen and (max-width: 575.98px) {
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .intro__text {
-        padding: 0 10px;
+        display: block;
+        padding: 30px 0;
+    }
+
+    .intro__item:nth-child(2) {
+        grid-column: auto;
+    }
+
+    .intro__item:nth-child(4) {
+        grid-column: auto;
+
+    }
+
+    .intro__item:nth-child(9) {
+        grid-column: auto;
+
     }
 
     .intro__item h3 {
-        font-size: 0.7rem;
-        margin-bottom: 0.1rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
     }
 
     .intro__text p {
-        font-size: 0.5rem;
-        line-height: 10px;
+        font-size: 0.9rem;
+        line-height: 20px;
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -417,7 +447,6 @@ header #btn-toggle {
 
     .number__item {
         width: 50%;
-        margin-bottom: 15px;
     }
 
     .number__item p {
@@ -429,7 +458,7 @@ header #btn-toggle {
 @media screen and (max-width: 575.98px) {
     .number__content {
         width: 70%;
-        margin: 30px auto;
+        margin: 20px auto;
     }
 
     .number__item h4 {
@@ -784,11 +813,15 @@ header #btn-toggle {
     }
 
     .gallery__overplay {
-        padding: 15px 28px;
+        padding: 20px 10px;
     }
 
     .gallery__overplay h3 {
         font-size: 1.5rem;
+    }
+
+    .gallery__overplay p {
+        right: 5%;
     }
 }
 
@@ -881,10 +914,12 @@ header #btn-toggle {
     font-size: 1.2rem;
     letter-spacing: -1px;
     margin-bottom: 5px;
+    color: rgb(67, 183, 52);
 }
 
 #product .product__item .item-text p.item-des {
     font-size: 0.875rem;
+    color: #ff009c;
     margin-bottom: 15px;
 }
 
@@ -899,6 +934,7 @@ header #btn-toggle {
 
 #product .item-text div p span:last-child {
     font-weight: bold;
+    color: #ee2624;
 }
 
 #product .item-text div p:nth-of-type(3) {
@@ -1321,6 +1357,7 @@ footer {
 
 .footer__content {
     display: flex;
+    flex-wrap: wrap;
     width: 75%;
     margin: 0 auto;
 }
@@ -1433,12 +1470,12 @@ footer h4 span {
 
 @media screen and (max-width: 991.98px) {
     .footer__content {
-        width: 90%;
+        width: 95%;
     }
 
     footer h4 {
         margin-top: 30px;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .footer__content .footer__item {
@@ -1464,19 +1501,32 @@ footer h4 span {
 
 @media screen and (max-width: 767.98px) {
     .footer__content {
-        display: block;
-        width: 60%;
+        width: 90%;
     }
 
     .footer__content .footer__item {
-        margin-bottom: 10px;
-        width: 100%;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    .footer__content .footer__item h2 {
+        margin-bottom: 5px;
     }
 }
 
 @media screen and (max-width: 575.98px) {
     .footer__content {
+        display: block;
         width: 80%;
+    }
+
+    .footer__content .footer__item {
+        width: 100%;
+    }
+
+    footer h4 {
+        margin-top: 20px;
+        font-size: 0.7rem;
     }
 }
 

@@ -32,17 +32,26 @@ const RenderListCart = (list) => {
                         <p class="item__cost"><span>${item.dealoff}đ</span> <span>${item.cost}đ</span></p>
                         <p class="item__size">${item.size} cm<sup>2</sup></p>
                     </div>
-                    <button id="btn-remove" onclick="handleRemoveCart(${index})">Xóa</button>
+                    <button id="btn-remove" onclick="handleRemoveCart(${index})">x</button>
                 </div>
             `
         })
         html = `<ul>${html}</ul>`
+        $('#list__cart').innerHTML = html
+
     }
     else {
-        html = `<h1 style="text-align: center; font-size: 2.25rem;">Giỏ Hàng Trống</h1>`
+        $('#list').style.display = 'none'
+        $('#list-empty').style.height = '100vh'
+        html = `
+            <div class="empty-cart">
+                <img id="empty-img" src="../img/emptycart.png" alt="">
+                <h1 id="empty-text">Giỏ Hàng Trống!!!</h1>
+            </div>
+        `
         $('#menu').style.display = "none"
+        $('#list-empty').innerHTML = html
     }
-    $('#list__cart').innerHTML = html
 }
 RenderListCart(LIST_CART.list)
 

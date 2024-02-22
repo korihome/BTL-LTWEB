@@ -29,14 +29,20 @@
         <div id="list__cart" class="list__cart"></div>
     </section>
 
+    <section id="list-empty">
+    
+    </section>
+
     <section id="menu">
-        <div class="menu__check">
-            <input type="checkbox" name="all" id="all" onchange="handleCheckAll(event)">
-            <span>Chọn tất cả ( <span id="count">0</span> )</span>
-        </div>
-        <div class="menu__buy">
-            <span>Tổng thanh toán ( <span id="count-cr">0</span> sản phẩm ): <span id="cost">0</span>đ</span>
-            <a href="ProPage.html" onclick="handleBuy(event)">MUA NGAY</a>
+        <div class="menu__content">
+            <div class="menu__check">
+                <input type="checkbox" name="all" id="all" onchange="handleCheckAll(event)">
+                <span>Chọn tất cả (<span id="count">0</span>)</span>
+            </div>
+            <div class="menu__buy">
+                <span>Tổng thanh toán (<span id="count-cr">0</span> sản phẩm): <span id="cost">0</span>đ</span>
+                <a href="ProPage.html" onclick="handleBuy(event)">MUA NGAY</a>
+            </div>
         </div>
     </section>
 

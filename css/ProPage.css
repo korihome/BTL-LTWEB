@@ -63,6 +63,44 @@ header #mainNav li #count-cart {
     color: red;
 }
 
+@media screen and (max-width: 991.98px) {
+    .header__content {
+        width: 85%;
+    }
+
+    header img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    header ul li {
+        margin: 0 0.7rem;
+    }
+
+    header ul li a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    header img {
+        width: 100px;
+    }
+
+    header ul li {
+        display: block;
+    }
+
+    header ul li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    header ul li a {
+        font-size: 0.8rem;
+    }
+}
+
 /* INFOR */
 #infor {
     display: flex;
@@ -75,8 +113,7 @@ header #mainNav li #count-cart {
     padding: 10px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
-
+    align-items: start;
 }
 
 #infor #infor__pro {
@@ -103,10 +140,12 @@ header #mainNav li #count-cart {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 5px;
+    color: rgb(67, 183, 52);
 }
 
 .list__item .item__infor .item__des {
     width: 90%;
+    color: #ff009c;
 }
 
 .list__item .item__infor .item__cost span:first-child {
@@ -117,7 +156,7 @@ header #mainNav li #count-cart {
 
 .list__item .item__infor .item__cost span:last-child {
     font-weight: bold;
-
+    color: #ee2624;
 }
 
 #infor__item {
@@ -170,6 +209,72 @@ header #mainNav li #count-cart {
     font-weight: bold;
     text-decoration: underline;
     color: #ff6767;
+}
+
+@media screen and (max-width: 1199.98px) {
+    #infor__item #infor__pay button {
+        width: 70%;
+        margin: 10px auto;
+        padding: 10px 0;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    #infor .list__item img {
+        width: 100px;
+    }
+
+    .list__item .item__infor .item__name {
+        font-size: 1.1rem;
+    }
+
+    #infor__item #infor__pay label {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    #infor {
+        display: block;
+    }
+
+    .list__item .item__infor .item__name {
+        font-size: 1.25rem;
+    }
+
+    #infor #infor__pro,
+    #infor #infor__item {
+        width: 100%;
+    }
+
+    #infor__item #infor__pay label {
+        font-size: 1.5rem;
+    }
+
+    #infor #infor__item li {
+        font-size: 1.2rem;
+    }
+
+    #infor__item #infor__pay button {
+        width: 30%;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .list__item .item__infor .item__name {
+        font-size: 1.1rem;
+    }
+
+    #infor__item #infor__pay label {
+        font-size: 1.2rem;
+    }
+
+    #infor__item #infor__pay button {
+        width: 50%;
+        font-size: 0.9rem;
+    }
 }
 
 /* FOOTER */
